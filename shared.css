@@ -26,9 +26,15 @@ header ul{
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    
 }
 header li{
     width: 100px;
     text-align: right;
     margin-left: 20px;
+}
+
+header li a{
+    text-decoration: none;
+    color: yellow;
 }

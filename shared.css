@@ -1,13 +1,19 @@
 body{
     font-family: "Quicksand", sans-serif;
     margin: 0;
+
 }
 #Container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 60px;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
 }
 
 #page-logo a{
@@ -36,5 +42,16 @@ header li{
 
 header li a{
     text-decoration: none;
-    color: black;
+    color: yellow;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
+
+header li a:hover{
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+}
+
+

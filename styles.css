@@ -1,16 +1,17 @@
-#hero{
+#hero {
     height: 800px;
     background-image: url("/assets/images/ocean.jpg");
     background-position: center;
     background-size: cover;
 }
-main{
-    text-align: center;
-    }
 
-#hero-container{
+main {
+    text-align: center;
+}
+
+#hero-container {
     width: 450px;
-    margin: 50px auto 0 auto;
+    margin: 0px auto 0 auto;
     background-color: rgba(51, 47, 47, 0.8);
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 8px;
@@ -19,15 +20,15 @@ main{
     top: 200px;
 }
 
-#hero-container h1{
-   color: white;
-   text-transform: uppercase;
-   font-size: 50px;
-   font-family: "Raleway", sans-serif;
-   margin: 0;
+#hero-container h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
-#hero-container p{
+#hero-container p {
     color: white;
     text-transform: uppercase;
     font-size: 24px;
@@ -35,7 +36,7 @@ main{
     margin-bottom: 32px;
 }
 
-#hero-container a{
+#hero-container a {
     padding: 12px 24px;
     border-radius: 8px;
     box-shadow: 2px 3px 8px rgb(68, 67, 67);
@@ -46,6 +47,56 @@ main{
     text-decoration: none;
 }
 
-#hero-container a:hover{
+#hero-container a:hover {
     background-color: rgb(255, 238, 0);
+}
+
+#highlights {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    
+}
+
+#highlights ul {
+
+    display: flex;
+}
+
+#highlights li {
+    list-style: none;
+    margin: 20px;
+    height: 300px;
+}
+
+#highlights li img {
+    width: 450px;
+    border-radius: 10px;
+    height: 200px;
+    box-shadow: 2px 3px 8px rgb(0, 0, 0);
+}
+
+#highlights li a {
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#highlights li p {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 10px;
+
+}
+
+#highlights h2 {
+    text-transform: uppercase;
+    margin-top: 0;
 }

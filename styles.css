@@ -52,51 +52,51 @@ main {
 }
 
 #highlights {
-    width: 100%;
-    box-sizing: border-box;
-    background-color: aquamarine;
-    
+   
+background: linear-gradient(0deg, rgb(227,255, 253), rgb(48, 214, 203));    
 }
 
 #highlights ul {
-
+   
     display: flex;
+    width: 90%;
+    margin: auto;
 }
 
 #highlights li {
+    width: 100%;
     list-style: none;
-    margin: 20px;
-    height: 300px;
+    margin: 0 20px;
 }
 
 #highlights li img {
-    width: 450px;
+    width: 100%;
     border-radius: 10px;
     height: 200px;
     box-shadow: 2px 3px 8px rgb(0, 0, 0);
+    object-fit: fill;
 }
 
 #highlights li a {
     text-decoration: none;
-    color: blue;
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: 300;
+    color: rgb(0, 160, 117);
+    font-size: 24px;
     text-transform: uppercase;
 }
 
 #highlights li p {
     text-decoration: none;
-    color: black;
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: 300;
+    color: rgb(124, 123, 123);
+    font-size: 24px;
     text-transform: uppercase;
-    margin: 10px;
+    margin: 20px 0;
 
 }
 
 #highlights h2 {
     text-transform: uppercase;
-    margin-top: 0;
+    font-size: 40px;
+    color: rgb(59, 65, 64);
+    margin-top:0;
+    margin-bottom: 24px;
 }

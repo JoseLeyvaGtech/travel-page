@@ -1,8 +1,4 @@
-body{
-    font-family: "Quicksand", sans-serif;
-    margin: 0;
 
-}
 #Container{
     display: flex;
     align-items: center;
@@ -80,4 +76,12 @@ footer li{
 footer li img{
     height: 100%;
     width: 100%;
+}
+main li{
+    list-style: none;
+}
+
+main li img{
+    width: 300px;
+    height: 280px;
 }

@@ -1,87 +1,233 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+}
 
-#Container{
+#Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+#page-logo a {
+  padding: 0.5rem;
+  font-family: "Oleo Script", sans-serif;
+  color: rgb(6, 214, 251);
+  font-size: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.menu-btn{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span{
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li {
+  width: 100px;
+  text-align: right;
+  margin-left: 1rem;
+}
+
+header li a {
+  text-decoration: none;
+  color: rgb(6, 214, 251);
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+header li a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(6, 214, 251);
+}
+#side-drawer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target{
+  display: block;
+}
+
+#side-drawer ul{
+  list-style: none;
+  margin: 0;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li{
+  padding: .5rem;
+}
+#side-drawer a{
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+  text-decoration: none;
+}
+#side-drawer header{
+ height: 5rem;
+ display: flex;
+ justify-content: flex-end;
+ background-color: rgb(29, 26, 24);
+ padding: 0 5%;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#footer-section {
+  width: 100%;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer li {
+  margin: 0 3.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+footer li img {
+  height: 100%;
+  width: 100%;
+}
+
+main li {
+  list-style: none;
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+main ul {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1rem;
+}
+
+main li img {
+  width: 22rem;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  object-fit: fill;
+}
+
+.item-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-content p {
+  text-align: left;
+}
+.item-content h2 {
+  margin: 0;
+}
+.actions {
+  text-align: right;
+}
+
+.actions a {
+  text-decoration: none;
+  padding: 0.2rem;
+  color: rgb(22, 211, 228);
+  border-radius: 5px;
+}
+
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
+}
+
+li:nth-of-type(3) {
+  grid-column: 1/3;
+}
+
+li:nth-of-type(6) {
+  grid-column: 1/3;
+}
+li:nth-of-type(9) {
+  grid-column: 1/3;
+}
+
+@media (max-width: 48rem) {
+  header nav{
+    display: none;
+  }
+  .menu-btn{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    background-color: transparent;
-}
-
-#page-logo a{
- padding: 10px;
- font-family: "Oleo Script", sans-serif;
- color: rgb(6, 214, 251);
- font-size: 50px;
- text-decoration: none;
- text-transform: uppercase;
- text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
-
-header ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-header li{
-    width: 100px;
-    text-align: right;
-    margin-left: 20px;
-}
-
-header li a{
-    text-decoration: none;
-    color: rgb(6, 214, 251);
-    font-size: 20px;
-    padding: 12px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-}
-
-header li a:hover{
-    color: rgb(77, 77, 77);
-    background-color: rgb(6, 214, 251);
-}
-
-footer{
-    background-color: black;
-    display: flex;
-    align-items: center;
-}
-#footer-section{
-    width: 100%;
-    text-align: center;
-}
-footer ul{
-    list-style: none;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-}
-footer li{
-    margin:0 50px;
-    width: 80px;
-    height: 80px;
-}
-
-
-footer li img{
+  }
+  #page-logo a{
+    font-size: 1.5rem;
+  }
+  main ul {
+    grid-template-columns: 100%;
+  }
+  main li {
+    grid-column: 1/3;
+  }
+  .item-content h2 {
+    font-size: 1rem;
+  }
+  .item-content p {
+    font-size: 0.8rem;
+  }
+  main li img {
+    width: 12rem;
     height: 100%;
-    width: 100%;
-}
-main li{
-    list-style: none;
-}
-
-main li img{
-    width: 300px;
-    height: 280px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    object-fit: fill;
+  }
+  .actions a{
+    font-size: .8rem;
+  }
 }
